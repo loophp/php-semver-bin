@@ -11,8 +11,7 @@
     "autoload": {
         "psr-4": {
             "Loophp\\PhpSemverBin\\": "src/"
-        },
-        "classmap": ["src"]
+        }
     },
     "authors": [
         {
@@ -21,6 +20,6 @@
         }
     ],
     "bin": [
-        "src/bin/php-semver"
+        "bin/php-semver"
     ]
 }

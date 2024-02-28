@@ -10,9 +10,8 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Loophp\\PhpSemverBin\\": "src/"
-        },
-        "classmap": ["src"]
+            "Loophp\\PhpSemverBinConsole\\": "src/"
+        }
     },
     "authors": [
         {

@@ -25,7 +25,7 @@ final class SemverSatisfiedByCommand extends Command {
 
         $satisfies = $semver->satisfiedBy($input->getArgument('version'), $input->getArgument('constraint'));
 
-        if (false === $satisfies) {
+        if ([] === $satisfies) {
             $output->writeln('Version ' . $input->getArgument('version') . ' does not satisfy constraint ' . $input->getArgument('constraint'));
             return Command::FAILURE;
         }

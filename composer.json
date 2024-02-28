@@ -1,0 +1,26 @@
+{
+    "name": "loophp/php-semver-bin",
+    "description": "PHP Semver CLI",
+    "type": "project",
+    "require": {
+        "php": "^8.0 || ^8.1 || ^8.2",
+        "symfony/console": "^6.4 || ^7",
+        "composer/semver": "^3.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Loophp\\PhpSemverBin\\": "src/"
+        },
+        "classmap": ["src"]
+    },
+    "authors": [
+        {
+            "name": "Pol Dellaiera",
+            "email": "pol.dellaiera@protonmail.com"
+        }
+    ],
+    "bin": [
+        "src/bin/php-semver"
+    ]
+}

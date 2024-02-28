@@ -11,7 +11,8 @@
     "autoload": {
         "psr-4": {
             "Loophp\\PhpSemverBin\\": "src/"
-        }
+        },
+        "classmap": ["src"]
     },
     "authors": [
         {

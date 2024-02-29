@@ -26,11 +26,15 @@ final class SemverSatisfiedByCommand extends Command {
         $satisfies = $semver->satisfiedBy($input->getArgument('version'), $input->getArgument('constraint'));
 
         if ([] === $satisfies) {
-            $output->writeln('Version ' . $input->getArgument('version') . ' does not satisfy constraint ' . $input->getArgument('constraint'));
+            if ($input->getOption('quiet') !== true) {
+                $output->writeln('Version ' . $input->getArgument('version') . ' does not satisfy constraint ' . $input->getArgument('constraint'));
+            }
             return Command::FAILURE;
         }
 
-        $output->writeln('Version ' . $input->getArgument('version') . ' satisfies constraint ' . $input->getArgument('constraint'));
+        if ($input->getOption('quiet') !== true) {
+            $output->writeln('Version ' . $input->getArgument('version') . ' satisfies constraint ' . $input->getArgument('constraint'));
+        }
         return Command::SUCCESS;
     }
 }

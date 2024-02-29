@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Loophp\PhpSemverBinConsole\Commands;
+namespace Loophp\PhpSemverBin\Commands;
 
 use Composer\Semver\Semver;
 use Symfony\Component\Console\Command\Command;
